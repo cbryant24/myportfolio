@@ -10,7 +10,7 @@ app.use('/', static);
 
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/HTML/index-video_bg.html')
+    res.sendFile(__dirname + '/portfolio/index-video_bg.html')
 })
 
 

@@ -1,1 +1,7 @@
 node_modules
+HTML
+documentation
+app.js
+static_paths.js
+npm-debug.log
+package.json

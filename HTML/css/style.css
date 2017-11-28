@@ -3274,9 +3274,12 @@ ul.icon-tab-nav, .icon-tab-nav ul {
 }
 
     .client-logo img {
-        height: 100%;
+        height: 125%;
     }
 
+        .owl-carousel .owl-wrapper-outer {
+            overflow: visible;
+        }
 
 /*------------------------------------------------------------------*/
 /* Social */
