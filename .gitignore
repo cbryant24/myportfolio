@@ -1,5 +1,5 @@
 node_modules
-/HTML
+HTML
 documentation
 app.js
 static_paths.js
