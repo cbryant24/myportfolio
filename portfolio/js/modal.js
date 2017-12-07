@@ -80,7 +80,7 @@ function init() {
         })
         $('.modal-images').append($app_img)
         $('#modal-header').append('myFantasyFF')
-        $('.modal-desc').append(modal_data[1].description)
+        $('.modal-desc').append(modal_data[2].description)
         $('.modal-git').append($git_hub)
         $('.live-site').append($live_site)
         modal[0].style.display = "block"
