@@ -1,0 +1,185 @@
+/* The Modal (background) */
+.modal-open {
+    overflow: hidden;
+    height: 100%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    /* padding-top: 100px; Location of the box */
+    left: 0;
+    top: 0;
+    margin: auto;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99;
+    position: absolute;
+}
+
+.modal-body {
+    display: flex;
+    overflow: auto;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    position: fixed;
+    left: 20vw;
+    top: 14vh;
+    height: 70%;
+    width: 55%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    z-index: 100;
+    overflow: scroll;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:200; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:200; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: white;
+    color: black;
+}
+
+#modal-header {
+    margin: auto;
+}
+
+.modal-list {
+    width: 35%;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    min-width: 100%;
+}
+
+.modal-desc {
+    min-width: 100%;
+    font-size: 90%;
+    padding: 0px 5px 0px 5px;
+}
+
+.modal-links {
+    padding: 10px;
+    margin: auto;
+}
+
+.modal-git, .live-site {
+    font-size: 110%;
+    padding-left: 5px;
+}
+
+.modal-git a, .live-site a {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.modal-img {
+    width: 95%;
+}
+
+.modal-list ul {
+    margin-top: 0px;
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 0;
+}
+
+.modal-list li {
+    font-weight: normal;
+}
+
+.modal-list h5 {
+    margin: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 860px) {
+    .tech-list li {
+        float: left;
+        width: 50%;
+    }
+
+    .tech-list {
+        margin: auto;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-images {
+        width: 100%;
+    }
+
+    .modal-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 584px) {
+    .modal-header h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 431px) {
+    .modal-header h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-header h2 {
+        font-size: 19px;
+    }
+
+    .close {
+        font-size: 15px;
+    }
+}
