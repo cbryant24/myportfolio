@@ -3275,7 +3275,7 @@ ul.icon-tab-nav, .icon-tab-nav ul {
 }
 
     .client-logo img {
-        height: 125%;
+        height: 100%;
     }
 
         .owl-carousel .owl-wrapper-outer {
@@ -4132,5 +4132,65 @@ form .error {
 @media (max-width: 700px) {
     .my_title, .my_langs, .my_btn, .my_name {
         font-size: 150%;
+    }
+}
+
+.item {
+    padding: 4% 4% 4% 4%;
+}
+
+.first-icons, .second-icons, .third-icons {
+    display: flex;
+    /* margin-left: 8%; */
+}
+
+.icons {
+    overflow-x: hidden;
+    min-height: 60vh;
+}
+
+
+.left-scroll-button, .right-scroll-button {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: gray;
+    padding: 9px 0px 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    /* border-radius: 50% 50%; */
+    min-width: 5%;
+    font-weight: bold;
+    max-height: 30px;
+}
+
+.left-scroll-button {
+    position: relative;
+    float: left;
+    top: 25vh;
+}
+
+.right-scroll-button {
+    position: relative;
+    float: right;
+    top: 25vh;
+    margin-left: 3%;
+}
+
+
+@media (min-width: 992px) {
+    .client-logo img {
+        height: 125%;
+    }
+    .left-scroll-button, .right-scroll-button {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .client-logo img {
+        height: 100%;
     }
 }

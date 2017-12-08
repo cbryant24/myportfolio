@@ -93,6 +93,18 @@ function init() {
     $('.close').on('click', () => {
         clear_modal()
     })
+    $('.right-scroll-button').on('click', () => {
+        var offset = $('.item').offset()
+        debugger
+        $('.icons').scrollLeft(offset.left < 0 ? offset.left * -1 + 125 : offset.left + 200)
+        offset = $('.icons').offset()
+    })
+    $('.left-scroll-button').on('click', () => {
+        var offset = $('.item').offset()
+        debugger
+        $('.icons').scrollLeft(0)
+        offset = $('.item').offset()
+    })
 }
 
 
