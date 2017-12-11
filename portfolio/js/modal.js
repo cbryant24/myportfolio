@@ -44,7 +44,7 @@ function init() {
             })
         var $live_site = $('<a>', {
             href: modal_data[1].site,
-            text: 'My Students Grade'
+            text: 'Sporttrace'
         })
         var $git_hub = $('<a>', {
             href: modal_data[1].github,
@@ -72,7 +72,7 @@ function init() {
             })
         var $live_site = $('<a>', {
             href: modal_data[2].site,
-            text: 'My Students Grade'
+            text: 'myFantasyFF'
         })
         var $git_hub = $('<a>', {
             href: modal_data[2].github,
@@ -96,7 +96,7 @@ function init() {
     $('.right-scroll-button').on('click', () => {
         var offset = $('.item').offset()
         debugger
-        $('.icons').scrollLeft(offset.left < 0 ? offset.left * -1 + 125 : offset.left + 200)
+        $('.icons').scrollLeft(offset.left < 0 ? offset.left * -1 + 300 : offset.left + 300)
         offset = $('.icons').offset()
     })
     $('.left-scroll-button').on('click', () => {
