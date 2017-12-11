@@ -95,13 +95,11 @@ function init() {
     })
     $('.right-scroll-button').on('click', () => {
         var offset = $('.item').offset()
-        debugger
         $('.icons').scrollLeft(offset.left < 0 ? offset.left * -1 + 300 : offset.left + 300)
         offset = $('.icons').offset()
     })
     $('.left-scroll-button').on('click', () => {
         var offset = $('.item').offset()
-        debugger
         $('.icons').scrollLeft(0)
         offset = $('.item').offset()
     })
@@ -115,7 +113,6 @@ function clear_modal() {
     $('.modal-git').empty()
     $('.modal-images').empty()
     $('.live-site').empty()
-    debugger
     $('body').css({'overflow:':'visible', 'height':'100%'})
     modal[0].style.display = "none"
     $('body').removeClass('modal-open')
