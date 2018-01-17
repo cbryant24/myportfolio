@@ -28,7 +28,7 @@ function init() {
         $('.modal-git').append($git_hub)
         $('.live-site').append($live_site)
         modal[0].style.display = "block"
-        $('body').addClass('modal-open')  
+        $('body').addClass('modal-open')
     })
 
     $('#sport_trace').on('click', ()=> {

@@ -6,7 +6,7 @@
 
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    /* position: fixed; */
     z-index: 100; /* Sit on top */
     /* padding-top: 100px; Location of the box */
     left: 0;
@@ -27,7 +27,6 @@
 
 .modal-body {
     display: flex;
-    overflow: auto;
 }
 
 /* Modal Content */
@@ -36,10 +35,10 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    position: fixed;
-    left: 20vw;
-    top: 14vh;
-    height: 70%;
+    /* position: fixed; */
+    /* left: 20vw; */
+    top: 10vh;
+    /* height: 85%; */
     width: 55%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
@@ -79,6 +78,7 @@
 .modal-header {
     background-color: white;
     color: black;
+    /* height: 20vh; */
 }
 
 #modal-header {
@@ -137,6 +137,11 @@
 .modal-list h5 {
     margin: 0;
     font-weight: bold;
+    padding-top: 5%;
+}
+
+.tech-used {
+    text-align: center;
 }
 
 @media (max-width: 860px) {
@@ -160,6 +165,19 @@
     .modal-list {
         width: 100%;
     }
+
+    .backdrop {
+        height: 105vh;
+    }
+
+    .modal-content {
+        top: 0;
+        width: 60%;
+    }
+
+    .tech-list-container {
+        margin-left: 15%;
+    }
 }
 
 @media (max-width: 584px) {
@@ -182,4 +200,9 @@
     .close {
         font-size: 15px;
     }
+}
+
+.app-description {
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0, 0.4);
 }
