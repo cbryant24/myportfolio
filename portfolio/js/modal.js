@@ -16,11 +16,13 @@ function init() {
             })
         var $live_site = $('<a>', {
             href: modal_data[0].site,
-            text: 'My Students Grade'
+            text: 'My Students Grade',
+            target: "_blank"
         })
         var $git_hub = $('<a>', {
             href: modal_data[0].github,
-            text: 'Github Repo'
+            text: 'Github Repo',
+            target: "_blank"
         })
         $('.modal-images').append($app_img)
         $('#modal-header').append('My Students Grade')
@@ -44,11 +46,13 @@ function init() {
             })
         var $live_site = $('<a>', {
             href: modal_data[1].site,
-            text: 'Sporttrace'
+            text: 'Sporttrace',
+            target: "_blank"
         })
         var $git_hub = $('<a>', {
             href: modal_data[1].github,
-            text: 'Github Repo'
+            text: 'Github Repo',
+            target: "_blank"
         })
         $('.modal-images').append($app_img)
         $('#modal-header').append('My Students Grade')
@@ -72,11 +76,13 @@ function init() {
             })
         var $live_site = $('<a>', {
             href: modal_data[2].site,
-            text: 'myFantasyFF'
+            text: 'myFantasyFF',
+            target: "_blank"
         })
         var $git_hub = $('<a>', {
             href: modal_data[2].github,
-            text: 'Github Repo'
+            text: 'Github Repo',
+            target: "_blank"
         })
         $('.modal-images').append($app_img)
         $('#modal-header').append('myFantasyFF')
